@@ -5,6 +5,12 @@ import { useOrders, Order, PaymentMethod } from "@/context/order-context";
 
 export const Route = createFileRoute("/checkout")({
   component: CheckoutPage,
+  head: () => ({
+    meta: [
+      { title: "Checkout | SIZOR Techwear India" },
+      { name: "robots", content: "noindex, nofollow" }
+    ]
+  }),
 });
 
 function CheckoutPage() {

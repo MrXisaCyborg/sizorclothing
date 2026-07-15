@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/support/contact")({
   component: ContactPage,
+  head: () => ({
+    meta: [
+      { title: "Contact Us | SIZOR Mumbai Studio" },
+      { name: "description", content: "Get in touch with the SIZOR team. Based in Mumbai, India. Customer support for techwear and streetwear." },
+      { property: "og:title", content: "Contact Us | SIZOR Mumbai Studio" },
+      { property: "og:url", content: "https://sizor.com/support/contact" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/support/contact" }
+    ]
+  }),
 });
 
 function ContactPage() {

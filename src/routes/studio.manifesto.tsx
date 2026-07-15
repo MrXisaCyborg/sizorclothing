@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/studio/manifesto")({
   component: ManifestoPage,
+  head: () => ({
+    meta: [
+      { title: "Manifesto | SIZOR Techwear India" },
+      { name: "description", content: "The philosophy behind SIZOR. Premium techwear and streetwear designed in Mumbai for global utility." },
+      { property: "og:title", content: "Manifesto | SIZOR Techwear India" },
+      { property: "og:url", content: "https://sizor.com/studio/manifesto" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/studio/manifesto" }
+    ]
+  }),
 });
 
 function ManifestoPage() {

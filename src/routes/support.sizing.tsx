@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/support/sizing")({
   component: SizingPage,
+  head: () => ({
+    meta: [
+      { title: "Sizing Guide | SIZOR Techwear India" },
+      { name: "description", content: "Comprehensive sizing guide for SIZOR's utility clothing and outerwear. Measure for the perfect fit." },
+      { property: "og:title", content: "Sizing Guide | SIZOR Techwear India" },
+      { property: "og:url", content: "https://sizor.com/support/sizing" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/support/sizing" }
+    ]
+  }),
 });
 
 function SizingPage() {

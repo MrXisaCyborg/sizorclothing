@@ -3,6 +3,13 @@ import { useOrders, Order } from "@/context/order-context";
 
 export const Route = createFileRoute("/account")({
   component: AccountPage,
+  head: () => ({
+    meta: [
+      { title: "Account | SIZOR Techwear India" },
+      { name: "description", content: "Manage your SIZOR account and track your limited run techwear orders in India." },
+      { name: "robots", content: "noindex, nofollow" }
+    ]
+  }),
 });
 
 function AccountPage() {

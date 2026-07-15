@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/studio/journal")({
   component: JournalPage,
+  head: () => ({
+    meta: [
+      { title: "Journal | Techwear Culture India — SIZOR" },
+      { name: "description", content: "Notes, process, and culture from the SIZOR studio in Mumbai. Exploring the intersection of techwear and streetwear." },
+      { property: "og:title", content: "Journal | Techwear Culture India — SIZOR" },
+      { property: "og:url", content: "https://sizor.com/studio/journal" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/studio/journal" }
+    ]
+  }),
 });
 
 const articles = [

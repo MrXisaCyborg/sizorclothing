@@ -11,7 +11,9 @@ export function SiteFooter() {
               <Logo className="h-14 md:h-20 w-auto" />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-bone/50">
-              Precision techwear. Made in limited runs. Shipped worldwide from Mumbai.
+              Premium techwear and streetwear outerwear. 
+              <br/>
+              Based in Mumbai, India. Shipping utility clothing nationwide across India (including Chennai) and worldwide.
             </p>
           </div>
           {[
@@ -74,9 +76,14 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
-          <div className="label-xs text-bone/40">© 2026 SIZOR Studio — Mumbai, IN</div>
-          <div className="label-xs text-bone/40">Terms · Privacy · Imprint</div>
+        <div className="mt-16 border-t border-line pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <p className="label-xs text-bone/30">
+            © {new Date().getFullYear()} SIZOR. ALL RIGHTS RESERVED.
+          </p>
+          <p className="text-[10px] text-bone/10 max-w-md text-left md:text-right">
+            SIZOR (not Scissor) - Precision Techwear India. 
+            Engineered for the urban environment.
+          </p>
         </div>
       </div>
     </footer>

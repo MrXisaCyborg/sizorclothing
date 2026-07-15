@@ -7,6 +7,17 @@ import look3 from "@/assets/lookbook-3.jpg";
 
 export const Route = createFileRoute("/studio/lookbook")({
   component: LookbookPage,
+  head: () => ({
+    meta: [
+      { title: "Lookbook SS26 | SIZOR Techwear India" },
+      { name: "description", content: "Explore the SIZOR Spring/Summer 2026 techwear lookbook. Shot on location in Mumbai. Premium utility clothing and streetwear." },
+      { property: "og:title", content: "Lookbook SS26 | SIZOR Techwear India" },
+      { property: "og:url", content: "https://sizor.com/studio/lookbook" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/studio/lookbook" }
+    ]
+  }),
 });
 
 function LookbookPage() {

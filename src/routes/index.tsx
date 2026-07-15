@@ -62,7 +62,7 @@ function Landing() {
           <div className="absolute inset-0 bg-line/10 animate-pulse" />
           <motion.img
             src={heroImg}
-            alt="SIZOR field shell — techwear jacket in low light"
+            alt="SIZOR black techwear jacket worn in urban Mumbai setting"
             style={{ y: heroY }}
             className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover opacity-70"
           />
@@ -96,7 +96,7 @@ function Landing() {
               </h1>
               <div className="mt-8 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
                 <p className="animate-rise max-w-lg text-base text-bone/70 md:text-lg" style={{ animationDelay: "500ms" }}>
-                  Precision-engineered utility apparel. Modular systems, weather-tested shells,
+                  Precision-engineered utility apparel. Premium techwear and streetwear from Mumbai, India. Modular systems, weather-tested shells,
                   cut for movement — released in limited runs.
                 </p>
                 <div className="animate-rise flex flex-wrap items-center gap-4" style={{ animationDelay: "700ms" }}>
@@ -230,7 +230,7 @@ function Landing() {
               </Reveal>
             </div>
             <Reveal delay={200} className="relative aspect-square md:aspect-[4/5] bg-ink overflow-hidden group">
-              <img src={look3} alt="Fabric details" className="absolute inset-0 w-full h-full object-cover filter grayscale opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
+              <img src={look3} alt="Macro fabric details of SIZOR techwear waterproof membrane" loading="lazy" className="absolute inset-0 w-full h-full object-cover filter grayscale opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="label-xs text-acid bg-ink/80 backdrop-blur-sm inline-block px-3 py-1.5 mb-2">
@@ -275,21 +275,21 @@ function Landing() {
                 <Reveal className="col-span-6 md:col-span-4" delay={0}>
                   <div className="group relative aspect-[4/5] overflow-hidden" data-cursor="drag">
                     <div className="absolute inset-0 bg-line/10 animate-pulse" />
-                    <motion.img style={{ y: look1Y }} src={look1} alt="Editorial 01" className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
+                    <motion.img style={{ y: look1Y }} src={look1} alt="SIZOR streetwear lookbook shot in Mumbai concrete setting" loading="lazy" className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
                     <div className="absolute bottom-3 left-3 label-xs bg-ink/70 px-2 py-1 backdrop-blur-sm z-10">01 / Concrete</div>
                   </div>
                 </Reveal>
                 <Reveal className="col-span-3 md:col-span-2 md:mt-16" delay={140}>
                   <div className="group relative aspect-square overflow-hidden" data-cursor="drag">
                     <div className="absolute inset-0 bg-line/10 animate-pulse" />
-                    <motion.img style={{ y: look2Y }} src={look2} alt="Editorial 02" className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
+                    <motion.img style={{ y: look2Y }} src={look2} alt="Techwear jacket detail shot in Mumbai low light" loading="lazy" className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
                     <div className="absolute bottom-3 left-3 label-xs bg-ink/70 px-2 py-1 backdrop-blur-sm z-10">02 / Detail</div>
                   </div>
                 </Reveal>
                 <Reveal className="col-span-3 md:col-span-6" delay={220}>
                   <div className="group relative aspect-[21/9] overflow-hidden" data-cursor="drag">
                     <div className="absolute inset-0 bg-line/10 animate-pulse" />
-                    <motion.img style={{ y: look3Y }} src={look3} alt="Editorial 03" className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
+                    <motion.img style={{ y: look3Y }} src={look3} alt="SIZOR utility clothing lookbook shot in neon lit tunnel" loading="lazy" className="absolute inset-0 h-[120%] -top-[10%] w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
                     <div className="absolute bottom-3 left-3 label-xs bg-ink/70 px-2 py-1 backdrop-blur-sm z-10">03 / Tunnel</div>
                   </div>
                 </Reveal>

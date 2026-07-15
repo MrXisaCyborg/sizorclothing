@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/support/returns")({
   component: ReturnsPage,
+  head: () => ({
+    meta: [
+      { title: "Returns & Exchanges | SIZOR Techwear India" },
+      { name: "description", content: "SIZOR's 14-day return and exchange policy for unworn streetwear and utility apparel." },
+      { property: "og:title", content: "Returns & Exchanges | SIZOR Techwear India" },
+      { property: "og:url", content: "https://sizor.com/support/returns" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/support/returns" }
+    ]
+  }),
 });
 
 function ReturnsPage() {

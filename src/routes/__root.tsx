@@ -21,6 +21,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Preloader } from "../components/Preloader";
 import { SiteNav } from "../components/site-nav";
 import { SiteFooter } from "../components/site-footer";
+import { OrganizationSchema, LocalBusinessSchema } from "../components/seo-schemas";
 
 function NotFoundComponent() {
   return (
@@ -87,23 +88,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SIZOR — Techwear built for the field" },
+      { title: "SIZOR | Techwear & Streetwear Outerwear India" },
       {
         name: "description",
         content:
-          "SIZOR is a precision techwear label. Limited-run utility apparel engineered for movement, weather, and the street.",
+          "SIZOR is a premium techwear and streetwear label based in Mumbai. Utility clothing, outerwear, and tactical apparel shipped worldwide and across India including Chennai.",
       },
+      { name: "keywords", content: "techwear India, streetwear India, techwear brand Mumbai, streetwear Chennai, utility clothing India, limited run streetwear India, Sizor techwear, Sizor streetwear" },
       { name: "author", content: "SIZOR" },
-      { property: "og:title", content: "SIZOR — Techwear built for the field" },
+      { property: "og:title", content: "SIZOR | Techwear & Streetwear Outerwear India" },
       {
         property: "og:description",
         content:
-          "Limited-run utility apparel engineered for movement, weather, and the street.",
+          "Premium techwear and streetwear outerwear label. Utility clothing shipped worldwide and across India.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://sizor.com" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "canonical", href: "https://sizor.com" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/logo-wordmark.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -152,6 +156,8 @@ function RootComponent() {
                 onComplete={() => setShowPreloader(false)} 
               />
             )}
+            <OrganizationSchema />
+            <LocalBusinessSchema />
             {mountApp && (
               <div id="top" className="min-h-screen bg-ink text-bone flex flex-col transition-colors duration-500 ease-physics">
                 <SiteNav />

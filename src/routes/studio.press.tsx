@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/studio/press")({
   component: PressPage,
+  head: () => ({
+    meta: [
+      { title: "Press & Features | SIZOR Techwear India" },
+      { name: "description", content: "Press features and mentions for SIZOR, Mumbai's premium techwear and streetwear label." },
+      { property: "og:title", content: "Press & Features | SIZOR Techwear India" },
+      { property: "og:url", content: "https://sizor.com/studio/press" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/studio/press" }
+    ]
+  }),
 });
 
 const pressMentions = [

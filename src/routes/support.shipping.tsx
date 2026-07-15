@@ -4,6 +4,17 @@ import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/support/shipping")({
   component: ShippingPage,
+  head: () => ({
+    meta: [
+      { title: "Shipping & Delivery | SIZOR India & Worldwide" },
+      { name: "description", content: "Information on global shipping and delivery times. SIZOR techwear is shipped securely from Mumbai, India to worldwide destinations including Chennai." },
+      { property: "og:title", content: "Shipping & Delivery | SIZOR India & Worldwide" },
+      { property: "og:url", content: "https://sizor.com/support/shipping" }
+    ],
+    links: [
+      { rel: "canonical", href: "https://sizor.com/support/shipping" }
+    ]
+  }),
 });
 
 function ShippingPage() {
