@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link to="/" className="inline-block hover:opacity-70 transition-opacity">
-              <Logo className="h-14 md:h-20 w-auto" />
+              <Logo className="h-20 md:h-28 w-auto" />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-bone/50">
               Premium techwear and streetwear outerwear. 

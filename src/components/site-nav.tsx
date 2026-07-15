@@ -72,7 +72,7 @@ export function SiteNav() {
       >
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 relative">
           <Link to="/" className="flex items-center gap-3 relative z-10 hover:opacity-70 transition-opacity">
-            <Logo className="h-8 md:h-10 w-auto object-contain" />
+            <Logo className="h-10 md:h-14 w-auto object-contain" />
           </Link>
           
           <nav className="hidden items-center gap-10 md:flex relative z-10">

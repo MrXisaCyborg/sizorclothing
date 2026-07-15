@@ -160,7 +160,7 @@ export function Preloader({ onComplete, onStartExit }: { onComplete: () => void,
 
       <div className="relative z-10 flex flex-col items-center gap-8">
         <div className="animate-hero-glitch-in mb-4">
-          <Logo className="h-16 md:h-24 w-auto" />
+          <Logo className="h-24 md:h-32 w-auto" />
         </div>
         <div className="flex flex-col items-center gap-2 mt-4">
           <div className="text-acid font-mono text-xs tracking-widest">
