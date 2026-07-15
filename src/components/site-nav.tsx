@@ -96,7 +96,7 @@ export function SiteNav() {
             
             <Link
               to="/account"
-              className="p-2 text-bone hover:text-acid transition-colors"
+              className="hidden md:block p-2 text-bone hover:text-acid transition-colors"
               aria-label="Profile"
             >
               <User size={18} />
@@ -104,7 +104,7 @@ export function SiteNav() {
 
             <button
               onClick={toggleTheme}
-              className="p-2 text-bone hover:text-acid transition-colors"
+              className="hidden md:block p-2 text-bone hover:text-acid transition-colors"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
@@ -112,7 +112,7 @@ export function SiteNav() {
 
             <button
               onClick={() => setIsCartOpen(true)}
-              className="label-xs border border-bone/40 px-4 py-2 text-bone transition-colors hover:bg-acid hover:text-acid-foreground hover:border-acid"
+              className="hidden md:block label-xs border border-bone/40 px-4 py-2 text-bone transition-colors hover:bg-acid hover:text-acid-foreground hover:border-acid"
             >
               Bag [{cartCount}]
             </button>
@@ -194,6 +194,34 @@ export function SiteNav() {
               className="fixed inset-0 z-[110] bg-ink/95 backdrop-blur-md grain overflow-y-auto flex flex-col pt-32 px-6 pb-12 md:hidden"
             >
               <motion.div variants={mobileContainerVariants} initial="hidden" animate="show" className="flex flex-col gap-10">
+                {/* Actions */}
+                <motion.div variants={mobileItemVariants} className="flex flex-col gap-4 border-b border-line pb-8 mb-2">
+                  <button
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setIsCartOpen(true);
+                    }}
+                    className="label-xs border border-bone/40 px-6 py-4 text-bone transition-colors hover:bg-acid hover:text-acid-foreground hover:border-acid w-full flex justify-center items-center"
+                  >
+                    Bag [{cartCount}]
+                  </button>
+                  <div className="flex gap-4">
+                    <Link
+                      to="/account"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex-1 border border-line p-4 text-bone hover:text-acid transition-colors flex items-center justify-center gap-2 label-xs"
+                    >
+                      <User size={16} /> Account
+                    </Link>
+                    <button
+                      onClick={toggleTheme}
+                      className="flex-1 border border-line p-4 text-bone hover:text-acid transition-colors flex items-center justify-center gap-2 label-xs"
+                    >
+                      {theme === "dark" ? <><Sun size={16} /> Light</> : <><Moon size={16} /> Dark</>}
+                    </button>
+                  </div>
+                </motion.div>
+
                 {/* Shop Section */}
                 <div>
                   <motion.p variants={mobileItemVariants} className="label-xs text-acid mb-4">/ Shop</motion.p>
